@@ -4,5 +4,5 @@ export default {
     alt: "Image of the author",
     title: "Image of the author",
   },
-  name: "Rafael Cavalcanti",
+  name: "Sophie Brunner",
 };

@@ -1,7 +1,10 @@
-import { mediaMaxWidth } from '@/utils/media-query';
-import { styled } from 'styled-components';
+import { mediaMaxWidth } from "@/utils/media-query";
+import { styled } from "styled-components";
 
 export const Article = styled.article`
+  img {
+    display: none;
+  }
   h1 {
     color: ${({ theme }) => theme.richBlack};
     font-size: 4rem;
@@ -10,7 +13,7 @@ export const Article = styled.article`
     line-height: 4.8rem;
     margin: 0rem 0 3rem;
 
-    ${mediaMaxWidth('mobile')`
+    ${mediaMaxWidth("mobile")`
             font-size: 2.6rem;
             line-height: 3.2rem;
     `}
@@ -24,7 +27,7 @@ export const Article = styled.article`
     line-height: 4.8rem;
     margin: 3rem 0;
 
-    ${mediaMaxWidth('mobile')`
+    ${mediaMaxWidth("mobile")`
             font-size: 2.2rem;
             line-height: 2.8rem;
         `}
@@ -38,7 +41,7 @@ export const Article = styled.article`
     line-height: 4.8rem;
     margin: 3rem 0;
 
-    ${mediaMaxWidth('mobile')`
+    ${mediaMaxWidth("mobile")`
             font-size: 2rem;
             line-height: 2.8rem;
     `}
@@ -52,7 +55,7 @@ export const Article = styled.article`
     line-height: 4.8rem;
     margin: 3rem 0;
 
-    ${mediaMaxWidth('mobile')`
+    ${mediaMaxWidth("mobile")`
             font-size: 1.8rem;
             line-height: 2.8rem;
         `}
@@ -69,7 +72,7 @@ export const Article = styled.article`
     font-size: 1.6rem;
     font-weight: bold;
 
-    ${mediaMaxWidth('mobile')`
+    ${mediaMaxWidth("mobile")`
       font-size: 1.4rem;
     `}
   }
@@ -84,7 +87,7 @@ export const Article = styled.article`
     line-height: 2.7rem;
     margin-bottom: 1.4rem;
 
-    ${mediaMaxWidth('mobile')`
+    ${mediaMaxWidth("mobile")`
             font-size: 1.2rem;
             line-height: 2.2rem;
         `}
@@ -100,7 +103,7 @@ export const Article = styled.article`
       margin-bottom: 30px;
     }
 
-    ${mediaMaxWidth('mobile')`
+    ${mediaMaxWidth("mobile")`
       width: 18rem;
     `}
   }
@@ -109,7 +112,7 @@ export const Article = styled.article`
     display: flex;
     gap: 3.3rem;
 
-    ${mediaMaxWidth('mobile')`
+    ${mediaMaxWidth("mobile")`
             flex-direction: column;
         `}
   }

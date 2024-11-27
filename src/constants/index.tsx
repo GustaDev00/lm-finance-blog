@@ -9,22 +9,22 @@ export default {
       text: "Seiten",
       menu: "navigation",
       items: [
-        { title: "Home", href: "/", icon: HomeIcon },
+        { title: "Home", href: "https://lm-finance.ch/", icon: HomeIcon },
         { title: "Blog", href: "/blog" },
-        { title: "Über uns", href: "/portfolio" },
-        { title: "Kontakt", href: "/kontakt" },
+        { title: "Kontakt", href: "https://lm-finance.ch/kontakt/" },
+        { title: "Über uns", href: "https://lm-finance.ch/uber-uns/" },
       ],
     },
     contact: [
       {
         text: "Phone",
-        content: "076 469 28 31",
-        link: "tel:+0764692831",
+        content: "+41 78 261 94 66",
+        link: "tel:+41782619466",
       },
       {
         text: "E-Mail",
-        content: "info@trockenbau-dac.ch",
-        link: "mailto:info@fiberweb.ch",
+        content: "info@lm-finance.ch",
+        link: "mailto:info@lm-finance.ch",
       },
     ],
     social_share: {
@@ -49,7 +49,7 @@ export default {
     },
     footer: {
       text: "Kontakt Informationen",
-      copy: "Copyright © 2024 Ha-Tech GmbH",
+      copy: "Copyright © 2024 L & M Finance AG",
       agency: (
         <>
           Mit 💚 entwickelt von{" "}
@@ -63,11 +63,12 @@ export default {
     },
   },
   home: {
-    title: "Blog FiberWeb",
+    title: "Blog L & M Finance AG",
     description: (
       <>
-        Die HA-Tech Gmbh umfasst ein mittlerweile 14-köpfiges Team und ist tätig in der
-        <CustomBr byViewport="desktop" /> gesamten Deutschschweiz.
+        Unsere Dienstleistungen: Von Gesundheitsversicherungen
+        <CustomBr byViewport="desktop" /> bis hin zu Immobilienberatung – wir haben das passende
+        Angebot für dich.
       </>
     ),
   },
@@ -82,6 +83,6 @@ export default {
   cta: {
     title: "Mehr dazu",
     text: "Ihm blieb einiges übrig zweifeln? Kontaktieren Sie uns im Augenblick!",
-    href: "#",
+    href: "https://lm-finance.ch/kontakt/#",
   },
 };

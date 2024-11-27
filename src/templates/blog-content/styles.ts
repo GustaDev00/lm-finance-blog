@@ -1,3 +1,4 @@
+import { LazyImage } from "@/components/atoms/lazy-image";
 import { CtaFixed } from "@/components/molecules/cta-fixed";
 import { mediaMaxWidth } from "@/utils/media-query";
 import styled from "styled-components";
@@ -45,6 +46,18 @@ export const Cta = styled(CtaFixed)``;
 
 export const Article = styled.article`
   width: 100%;
+`;
+
+export const Img = styled(LazyImage)`
+  width: 100%;
+  height: 60rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin: 2rem 0 4rem;
+
+  ${mediaMaxWidth("mobile")`
+    height: 30rem;
+  `}
 `;
 
 export const Content = styled.div``;

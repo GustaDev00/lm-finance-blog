@@ -7,8 +7,6 @@ import { PostHighlight } from "@/components/organisms/post-highlight";
 import { LatestArticles } from "@/components/organisms/latest-articles";
 
 export const HomeTemplate: FC<HomeProps> = ({ values }) => {
-  console.log(values);
-
   if (!values) return null;
 
   return (
