@@ -21,28 +21,6 @@ export const LatestArticles: FC<{ values: ListPostsResponse[] }> = ({ values }) 
               link={post.json.link}
             />
           ))}
-
-          {values.map((post) => (
-            <S.Post
-              key={post.id}
-              title={post.json.title}
-              text={post.json.text}
-              img={post.json.link}
-              created_at={post.created_at}
-              link={post.json.link}
-            />
-          ))}
-
-          {values.map((post) => (
-            <S.Post
-              key={post.id}
-              title={post.json.title}
-              text={post.json.text}
-              img={post.json.link}
-              created_at={post.created_at}
-              link={post.json.link}
-            />
-          ))}
         </S.Posts>
         <S.Cta />
       </S.LatestArticles>
