@@ -13,7 +13,11 @@ export const Post: FC<PostProps> = ({
   ...props
 }) => {
   return (
-    <S.Post href={link.toLocaleLowerCase()} {...props} $horizontal={horizontal}>
+    <S.Post
+      href={`${process.env.NEXT_PUBLIC_URL}${link.toLocaleLowerCase()}`}
+      {...props}
+      $horizontal={horizontal}
+    >
       <S.Img src={img} alt={title} title={title} $horizontal={horizontal} />
       <S.Content>
         <S.Title>{title}</S.Title>
