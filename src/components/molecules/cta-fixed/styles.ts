@@ -33,4 +33,7 @@ export const Text = styled.p`
   margin-bottom: 2.4rem;
 `;
 
-export const Button = styled(Cta)``;
+export const Button = styled(Cta)`
+  font-size: 1.4rem;
+  padding: 2rem 4rem;
+`;

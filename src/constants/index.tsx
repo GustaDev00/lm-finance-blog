@@ -81,8 +81,7 @@ export default {
     title: "Neueste Artikel",
   },
   cta: {
-    title: "Mehr dazu",
-    header: "Kontakt aufnehmen",
+    title: "Kontakt aufnehmen",
     text: "Noch Fragen? Kontaktieren Sie uns noch heute.",
     href: "https://lm-finance.ch/kontakt/#",
   },
