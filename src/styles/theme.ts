@@ -1,7 +1,7 @@
 import "styled-components";
 
 export const theme = {
-  primary: "#5ECA83",
+  primary: "#077aae",
   titles: "#131523",
   descriptions: "#737373",
   texts: "#475569",
