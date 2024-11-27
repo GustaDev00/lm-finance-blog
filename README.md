@@ -32,3 +32,33 @@ export default theme;
 ### Step 3: Update Logo
 
 Replace the existing logo in the `public/imgs` directory with your new logo. Ensure the new logo has the same filename as the old one. Then, check the logo's appearance on both desktop and mobile to ensure it displays correctly and is appropriately sized.
+
+### Step 4: Update Page Metadata
+
+Open the `pages/_document.js` or `pages/_document.tsx` file and update the `<title>` and `<meta>` tags to reflect your site's title and description:
+
+```javascript
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+
+class MyDocument extends Document {
+  render() {
+    return (
+      <Html>
+        <Head>
+          <title>Your Site Title</title>
+          <meta name="description" content="Your site description" />
+          {/* Add other meta tags as needed */}
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
+}
+
+export default MyDocument;
+```
+
+Ensure that the title and description accurately represent your site and its content.
