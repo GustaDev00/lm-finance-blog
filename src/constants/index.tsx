@@ -10,7 +10,7 @@ export default {
       menu: "navigation",
       items: [
         { title: "Home", href: "https://lm-finance.ch/", icon: HomeIcon },
-        { title: "Blog", href: "/blog" },
+        { title: "Blog", href: "/" },
         { title: "Kontakt", href: "https://lm-finance.ch/kontakt/" },
         { title: "Über uns", href: "https://lm-finance.ch/uber-uns/" },
       ],
@@ -78,7 +78,7 @@ export default {
   },
   time: "minutos de leitura",
   latest: {
-    title: "Lastet Articles",
+    title: "Neueste Artikel",
   },
   cta: {
     title: "Mehr dazu",
