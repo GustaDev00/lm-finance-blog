@@ -26,7 +26,7 @@ export default () => {
             ))}
           </S.ListDesktop>
 
-          <S.CtaButton {...C.cta} />
+          <S.CtaButton title={C.cta.header} href={C.cta.href} />
 
           <S.Button onClick={handleClick}>
             <S.MenuLine />

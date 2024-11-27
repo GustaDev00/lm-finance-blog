@@ -82,7 +82,8 @@ export default {
   },
   cta: {
     title: "Mehr dazu",
-    text: "Ihm blieb einiges übrig zweifeln? Kontaktieren Sie uns im Augenblick!",
+    header: "Kontakt aufnehmen",
+    text: "Noch Fragen? Kontaktieren Sie uns noch heute.",
     href: "https://lm-finance.ch/kontakt/#",
   },
 };
