@@ -73,10 +73,10 @@ export default {
     ),
   },
   copy: {
-    copy: "Copiar link",
-    copied: "Link copiado",
+    copy: "Link kopieren",
+    copied: "Link kopiert",
   },
-  time: "minutos de leitura",
+  time: "Leseminuten",
   latest: {
     title: "Neueste Artikel",
   },
