@@ -1,6 +1,12 @@
 import listPosts from "@/api/list-posts";
 import BlogContent from "@/templates/blog-content";
 
+type PageProps = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
+
 export async function generateStaticParams() {
   const posts = await listPosts();
 
@@ -9,7 +15,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function Page({ params }: any) {
+export default async function Page({ params }: PageProps) {
   const { slug } = await params;
 
   const posts = await listPosts();

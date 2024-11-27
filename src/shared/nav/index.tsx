@@ -6,7 +6,7 @@ import C from "@/constants";
 
 export default () => {
   const [open, setOpen] = useState(false);
-  const { navigation, social_share } = C.data;
+  const { navigation } = C.data;
 
   const handleClick = useCallback(() => {
     setOpen((prev) => !prev);

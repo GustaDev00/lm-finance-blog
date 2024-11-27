@@ -1,6 +1,6 @@
 import React, { FC, ReactNode, useEffect, useLayoutEffect, useState } from "react";
-import { use } from "react-responsive";
 import { ViewportBaseProps, viewportsBase } from "../media-query";
+import { useMediaQuery } from "react-responsive";
 
 interface Props {
   breakpoints: { [view in ViewportBaseProps]?: ReactNode | string };

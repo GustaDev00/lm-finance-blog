@@ -5,7 +5,7 @@ export default interface ListPostsResponse {
     title: string;
     text: string;
     link: string;
-    schema: any[];
+    schema: { [key: string]: string | number | boolean | object }[];
     img: string;
     "img-prompt": string;
     content: string;

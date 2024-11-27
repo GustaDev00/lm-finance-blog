@@ -6,7 +6,7 @@ const listPosts = async () => {
     const { data } = await api.get("/user/posts");
 
     return data as ListPostsResponse[];
-  } catch (error) {
+  } catch {
     return [];
   }
 };
