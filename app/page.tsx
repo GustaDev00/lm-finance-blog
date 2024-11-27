@@ -3,23 +3,23 @@ import listPosts from "@/api/list-posts";
 import { HomeTemplate } from "@/templates/home";
 
 export const metadata: Metadata = {
-  title: "Que tipo de serviço está procurando hoje?",
-  description: "Encontre o serviço que precisar aqui na Baterias Galileu",
+  title: "Welche Art von Service suchen Sie heute?",
+  description: "Finden Sie hier den Service, den Sie bei L & M Finance benötigen",
   openGraph: {
     url: `${process.env.NEXT_PUBLIC_API_URL}/`,
-    title: "Que tipo de serviço está procurando hoje?",
-    description: "Encontre o serviço que precisar aqui na Baterias Galileu",
+    title: "Welche Art von Service suchen Sie heute?",
+    description: "Finden Sie hier den Service, den Sie bei L & M Finance benötigen",
     type: "website",
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_API_URL}/imgs/logo.png`,
-        alt: "Baterias Galileu Logo",
+        alt: "L & M Finance Logo",
       },
     ],
   },
   twitter: {
-    title: "Que tipo de serviço está procurando hoje?",
-    description: "Encontre o serviço que precisar aqui na Baterias Galileu",
+    title: "Welche Art von Service suchen Sie heute?",
+    description: "Finden Sie hier den Service, den Sie bei L & M Finance benötigen",
   },
 };
 
