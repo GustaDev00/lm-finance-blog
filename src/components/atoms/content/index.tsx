@@ -11,7 +11,7 @@ const Content: FC<{ content: string }> = ({ content }) => {
     console.error("Failed to parse content:", error);
   }
 
-  return <Article dangerouslySetInnerHTML={{ __html: cleanContent }} />;
+  return <Article dangerouslySetInnerHTML={{ __html: cleanContent.replaceAll("ß", "ss") }} />;
 };
 
 export default Content;

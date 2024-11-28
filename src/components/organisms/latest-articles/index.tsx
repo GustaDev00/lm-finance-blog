@@ -14,7 +14,7 @@ export const LatestArticles: FC<{ values: ListPostsResponse[] }> = ({ values }) 
           {values.map((post) => (
             <S.Post
               key={post.id}
-              title={post.json.title}
+              title={post.json.title.replaceAll("ß", "ss")}
               text={post.json.text}
               img={post.json.link}
               created_at={post.created_at}

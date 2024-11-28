@@ -29,12 +29,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: post.json.title,
-    description: post.json.text,
+    title: post.json.title.replaceAll("ß", "ss"),
+    description: post.json.text.replaceAll("ß", "ss"),
     openGraph: {
       url: `${process.env.NEXT_PUBLIC_URL}/${slug}`,
-      title: post.json.title,
-      description: post.json.text,
+      title: post.json.title.replaceAll("ß", "ss"),
+      description: post.json.text.replaceAll("ß", "ss"),
       type: "article",
       images: [
         {
@@ -44,8 +44,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       ],
     },
     twitter: {
-      title: post.json.title,
-      description: post.json.text,
+      title: post.json.title.replaceAll("ß", "ss"),
+      description: post.json.text.replaceAll("ß", "ss"),
     },
   };
 }
