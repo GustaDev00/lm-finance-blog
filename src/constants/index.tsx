@@ -49,7 +49,7 @@ export default {
     },
     footer: {
       text: "Kontakt Informationen",
-      copy: "Copyright © 2024 L & M Finance AG",
+      copy: "Copyright © 2024 L&M Finance AG",
       agency: (
         <>
           Mit 💚 entwickelt von{" "}
@@ -63,7 +63,7 @@ export default {
     },
   },
   home: {
-    title: "Blog L & M Finance AG",
+    title: "Blog L&M Finance AG",
     description: (
       <>
         Unsere Dienstleistungen: Von Gesundheitsversicherungen

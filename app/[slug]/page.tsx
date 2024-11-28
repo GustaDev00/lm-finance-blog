@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: [
         {
           url: `${process.env.NEXT_PUBLIC_URL}/imgs/logo.png`,
-          alt: "L & M Finance Logo",
+          alt: "L&M Finance Logo",
         },
       ],
     },
