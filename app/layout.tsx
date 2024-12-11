@@ -17,6 +17,12 @@ const RootLayout = ({
 }>): ReactNode => {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="8t_75lI2kjA2HUGbh7Z-SiGTcoVXDHoVCydKK4x_c2Y"
+        />
+      </head>
       <body className={fontNames}>
         <StyledComponentsRegistry>
           <ThemeProvider theme={theme}>
