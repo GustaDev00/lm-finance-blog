@@ -1,4 +1,5 @@
 import listPosts from "@/api/list-posts";
+import { VisitorData } from "@/components/atoms/visitor-data";
 import BlogContent from "@/templates/blog-content";
 import { Metadata } from "next";
 
@@ -60,5 +61,9 @@ export default async function Page({ params }: PageProps) {
     return <p>Post não encontrado</p>;
   }
 
-  return <BlogContent post={post} posts={posts} />;
+  return (
+    <VisitorData id={post.id}>
+      <BlogContent post={post} posts={posts} />
+    </VisitorData>
+  );
 }

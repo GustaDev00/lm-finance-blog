@@ -17,7 +17,7 @@ const downloadImage = async (imageUrl, destinationPath) => {
       const imageResponse = await axios.get(imageUrl, {
         responseType: "stream",
         headers: {
-          Authorization: process.env.NEXT_POST_API_TOKEN,
+          Authorization: process.env.NEXT_PUBLIC_API_TOKEN,
         },
       });
       imageResponse.data.pipe(fs.createWriteStream(destinationPath));
@@ -38,11 +38,11 @@ const getImageAndDownload = async () => {
     const options = {
       method: "GET",
       headers: {
-        Authorization: process.env.NEXT_POST_API_TOKEN,
+        Authorization: process.env.NEXT_PUBLIC_API_TOKEN,
       },
     };
 
-    const apiUrl = `${process.env.NEXT_POST_API_URL}/user/posts`;
+    const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/user/posts`;
     const response = await fetch(apiUrl, options)
       .then((response) => response.json())
       .catch((err) => console.error(err));
